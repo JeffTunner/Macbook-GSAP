@@ -1,4 +1,5 @@
 import React from 'react'
+import {navLinks} from "../constants/index.js";
 
 const NavBar = () => {
     return (
@@ -7,8 +8,21 @@ const NavBar = () => {
                 <img src={"/logo.svg"} alt={"apple-logo"} />
 
                 <ul>
-                    {[]}
+                    {navLinks.map(({label}) => (
+                        <li key={label} >
+                            <a href={label}>{label}</a>
+                        </li>
+                    ))}
                 </ul>
+
+                <div className={"flex-center gap-3"} >
+                    <button>
+                        <img src={"/search.svg"} alt={"Search"}/>
+                    </button>
+                    <button>
+                        <img src={"/cart.svg"} alt={"Cart"} />
+                    </button>
+                </div>
             </nav>
         </header>
     );
