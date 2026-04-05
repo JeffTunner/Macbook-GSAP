@@ -7,6 +7,7 @@ import Showcase from "./components/Showcase.jsx";
 import Performance from "./components/Performance.jsx";
 import Feature from "./components/Feature.jsx";
 import Highlights from "./components/Highlights.jsx";
+import Footer from "./components/Footer.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,6 +21,7 @@ function App() {
             <Performance />
             <Feature />
             <Highlights />
+            <Footer />
         </main>
     );
 }
